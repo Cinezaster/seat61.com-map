@@ -1,0 +1,64 @@
+{
+  "name": "seat61.com-map",
+  "version": "0.1.0",
+  "private": true,
+  "description": "A map showing all starting points with their destinations of the seat61.com website",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Cinezaster/seat61.com-map.git"
+  },
+  "author": {
+    "name": "Toon Nelissen",
+    "email": "toon.nelissen@gmail.com",
+    "url": "https://github.com/Cinezaster"
+  },
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Cinezaster/seat61.com-map/issues"
+  },
+  "homepage": "https://cinezaster.github.io/seat61.com-map",
+  "dependencies": {
+    "cheerio": "^1.0.0-rc.3",
+    "fs-extra": "^8.1.0",
+    "gh-pages": "^2.1.1",
+    "got": "^9.6.0",
+    "leaflet": "^1.5.1",
+    "react": "^16.9.0",
+    "react-dom": "^16.9.0",
+    "react-leaflet": "^2.4.0",
+    "react-scripts": "3.1.1"
+  },
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject",
+    "scrape": "node src/scrapper.js",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build"
+  },
+  "eslintConfig": {
+    "extends": [
+      "react-app",
+      "standard"
+    ]
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  },
+  "devDependencies": {
+    "eslint-config-standard": "^13.0.1",
+    "eslint-plugin-node": "^9.1.0",
+    "eslint-plugin-promise": "^4.2.1",
+    "eslint-plugin-standard": "^4.0.0"
+  }
+}
